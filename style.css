@@ -39,7 +39,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 72px;
+    height: 100px;
     
 }
 
@@ -247,8 +247,38 @@ a {
 
 .album {
     width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
 }
 
+.album-img {
+    height: 4rem;
+    border-radius: 0.3rem;
+}
+.album-icons {
+    height: 2rem;
+    margin-left: 1rem;
+}
+.album-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 0;
+    
+}
+.album-info p {
+    margin: 0.5rem 0 0 1.5rem;
+}
+.title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.singer {
+    font-size: 0.9rem;
+}
 .player {
     width: 50%;
     display: flex;
@@ -266,9 +296,20 @@ a {
 }
 .controls {
     width: 25%;
-    
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: end;
+    align-items: center;
+    margin-right: 2rem;
 }
 
+.controls-icon {
+    height: 2rem;
+    margin-right: 1rem;
+}
+.music-level {
+    height: 2px;
+}
 .progress-bar {
     display: flex;
     flex-direction: row;
@@ -296,7 +337,7 @@ a {
 }
 
 .range-bar::-webkit-slider-thumb {
-    appearance: none;
+    /* appearance: none; */
     height: 1rem;
     width: 1rem;
     color: #1bd760;
